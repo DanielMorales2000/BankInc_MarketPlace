@@ -2,6 +2,7 @@ import { FormBuilder, FormControl, FormGroup, UntypedFormGroup, Validators } fro
 import { AuthService } from './../components/services/auth.service';
 import { Component, OnInit } from '@angular/core';
 import { LoginDataModel } from './models/logindatamodel.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -11,7 +12,7 @@ import { LoginDataModel } from './models/logindatamodel.model';
 export class LoginComponent implements OnInit {
   loginFormGroup: FormGroup;
 
-  constructor(private authService: AuthService, private builder: FormBuilder) {
+  constructor(private authService: AuthService, private builder: FormBuilder, private router: Router) {
     this.loginFormGroup = this.builder.group({
       'email': ['', [Validators.required, Validators.email, Validators.maxLength(50)]],
       'password': ['', [Validators.required, Validators.maxLength(16), Validators.minLength(5)]],
@@ -27,7 +28,8 @@ export class LoginComponent implements OnInit {
     this.authService.login(loginData);
   }
 
-  emailFormControl = new FormControl('email', [Validators.required, Validators.email]);
+  back() {
+    this.router.navigate(["/products"]);
 
-
+  }
 }

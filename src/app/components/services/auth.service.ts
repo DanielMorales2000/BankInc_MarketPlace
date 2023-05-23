@@ -30,7 +30,7 @@ export class AuthService {
             },
             error: (error: any) => {
                 this.dialog.open(BasicModalComponent, {
-                    data: { title: "Error", body: "Usuario o contraseña incorrectos" },
+                    data: { title: "Error", body: "Wrong username or password" },
                 });
             }
         });
@@ -40,7 +40,6 @@ export class AuthService {
         const tokens = this.getAuthData();
         if (!tokens.access_token) {
             this.isAuthenticatedListener.next(false);
-            this.router.navigate(["/"]);
             return;
         }
         this.isAuthenticatedListener.next(true);

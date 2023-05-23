@@ -12,10 +12,12 @@
       >
     </button>
     <button mat-button (click)="onCloseSession()">
-      <mat-icon class="example-icon" (click)="onCloseSession()"
+      <mat-icon
+        class="example-icon"
+        (click)="isAuth ? onCloseSession() : onLogin()"
         >meeting_room</mat-icon
       >
-      Close session
+      {{ isAuth ? "Close session" : "LogIn" }}
     </button>
   </mat-toolbar-row>
 </mat-toolbar>

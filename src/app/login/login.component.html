@@ -1,6 +1,6 @@
 <div class="container">
   <mat-card>
-    <mat-card-title><h1>Iniciar Sesión</h1></mat-card-title>
+    <mat-card-title><h1>Start Session</h1></mat-card-title>
     <mat-card-content>
       <form class="example-form" [formGroup]="loginFormGroup">
         <div>
@@ -17,7 +17,7 @@
                 loginFormGroup.controls['email'].touched
               "
             >
-              Digite un email válido
+              Enter a valid email
             </mat-error>
           </mat-form-field>
         </div>
@@ -27,7 +27,7 @@
             appearance="fill"
             color="accent"
           >
-            <mat-label>Contraseña</mat-label>
+            <mat-label>Password</mat-label>
             <input type="password" matInput formControlName="password" />
             <mat-error
               *ngIf="
@@ -35,7 +35,7 @@
                 loginFormGroup.controls['password'].touched
               "
             >
-              La contraseña debe tener entre 5 y 16 caracteres
+              Password must be between 5 and 16 characters
             </mat-error>
           </mat-form-field>
         </div>
@@ -48,10 +48,10 @@
         [disabled]="loginFormGroup.invalid"
         (click)="login()"
       >
-        Ingresar
+        LogIn
       </button>
-      <div class="raised-button">
-        <button mat-raised-button>Cancelar</button>
+      <div class="raised-button" (click)="back()">
+        <button mat-raised-button>Return</button>
       </div>
     </mat-card-actions>
   </mat-card>

@@ -1,15 +1,28 @@
 <mat-toolbar>
   <mat-toolbar-row class="search-menu">
     <span class="example-spacer"></span>
-    <button mat-button *ngFor="let category of categories">
-      {{ category.name }}<mat-icon>visibility</mat-icon>
+    <button
+      mat-button
+      *ngFor="let category of categories"
+      (click)="onSelectCategory(category)"
+    >
+      {{ category.name
+      }}<mat-icon color="{{ category == selectedCategory ? 'warn' : null }}"
+        >visibility</mat-icon
+      >
     </button>
     <span class="example-spacer"></span>
     <div class="search-by-name">
-      <form class="example-form">
+      <form class="example-form" [formGroup]="filterForm">
         <mat-form-field class="example-full-width" color="accent">
           <mat-label>Search</mat-label>
-          <input type="text" matInput placeholder="example: computer" />
+          <input
+            type="text"
+            matInput
+            placeholder="example: computer"
+            (blur)="getProducts()"
+            formControlName="name"
+          />
           <mat-icon matSuffix>search</mat-icon>
         </mat-form-field>
       </form>
