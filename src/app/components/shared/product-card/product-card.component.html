@@ -1,1 +1,17 @@
-<p>product-card works!</p>
+<mat-card>
+  <mat-card-header
+    ><mat-icon class="shopping-cart-icon" color="primary"
+      >local_grocery_store</mat-icon
+    ></mat-card-header
+  >
+  <mat-card-content>
+    <div class="img">
+      <img src="{{ product.images[0] }}" class="img" />
+    </div>
+    <h3>
+      <strong>{{ product.title }}</strong>
+    </h3>
+    <div><strong>Price: </strong>{{ product.price }}</div>
+  </mat-card-content>
+  <mat-card-footer></mat-card-footer>
+</mat-card>

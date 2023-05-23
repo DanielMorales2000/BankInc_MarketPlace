@@ -8,4 +8,4 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 ## Project State
 
-The project meets most of the requirements, however, given certain inconveniences that I had these days, I had delays and some things are missing such as responsiveness, I apologize and thank you for your time.
+The project meets most of the requirements, however, given certain inconveniences that I had these days, I had delays and some things are missing such as responsiveness or the image slider, I apologize and thank you for your time.

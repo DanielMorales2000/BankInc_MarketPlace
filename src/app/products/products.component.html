@@ -38,3 +38,11 @@
     </div>
   </mat-toolbar-row>
 </mat-toolbar>
+<div class="products-container">
+  <div class="products-space">
+    <app-product-card
+      *ngFor="let product of products"
+      [productInput]="product"
+    ></app-product-card>
+  </div>
+</div>

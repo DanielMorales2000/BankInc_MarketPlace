@@ -1,0 +1,28 @@
+.mat-mdc-card {
+  width: min-content;
+  background-color: beige;
+  backdrop-filter: blur(10px);
+  margin: 1.5vw;
+  float: left;
+}
+
+.mat-mdc-card-content {
+  padding: 6px;
+}
+
+.img {
+  max-width: 17vw;
+  min-width: 10vw;
+}
+
+.shopping-cart-icon {
+  margin-top: -4vh;
+  margin-right: -0.5vw;
+  position: absolute;
+  right: 0;
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+}

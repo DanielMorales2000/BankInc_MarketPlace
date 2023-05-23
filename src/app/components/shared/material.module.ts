@@ -28,7 +28,6 @@ const materialModules = [
 
 @NgModule({
   declarations: [
-    ProductCardComponent
   ],
   imports: [],
   exports: [...materialModules]

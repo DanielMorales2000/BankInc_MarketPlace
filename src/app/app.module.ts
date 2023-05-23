@@ -13,6 +13,8 @@ import { MaterialModule } from './components/shared/material.module';
 import { SidenavComponent } from './components/shared/sidenav/sidenav.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { ProductCardComponent } from './components/shared/product-card/product-card.component';
 
 
 @NgModule({
@@ -23,7 +25,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     ShoppingCartComponent,
     BasicModalComponent,
     LoadingComponent,
-    SidenavComponent
+    SidenavComponent,
+    ProductDetailComponent,
+    ProductCardComponent
   ],
   imports: [
     BrowserModule,
