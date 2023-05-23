@@ -11,6 +11,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatBadgeModule } from '@angular/material/badge';
 import { ProductCardComponent } from './product-card/product-card.component';
+import { MainMenuComponent } from './main-menu/main-menu.component';
 
 const materialModules = [
   MatIconModule,

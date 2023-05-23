@@ -53,24 +53,4 @@ export class ProductsComponent implements OnInit {
     category;
   }
 
-  onCloseSession() {
-    this.authService.closeSession();
-  }
-
-  openDialog(): void {
-    const dialogRef = this.dialog.open(ShoppingCartComponent, {
-      width: '80vw',
-      maxWidth: '100vw',
-      height: '80vh',
-      maxHeight: '100vh',
-      data: {}
-    },);
-
-    dialogRef.afterClosed().subscribe(result => {
-      if (result) {
-        result;
-      }
-    });
-  }
-
 }

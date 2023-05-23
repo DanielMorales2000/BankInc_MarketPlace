@@ -15,6 +15,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { ProductCardComponent } from './components/shared/product-card/product-card.component';
+import { MainMenuComponent } from './components/shared/main-menu/main-menu.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { ProductCardComponent } from './components/shared/product-card/product-c
     LoadingComponent,
     SidenavComponent,
     ProductDetailComponent,
-    ProductCardComponent
+    ProductCardComponent,
+    MainMenuComponent
   ],
   imports: [
     BrowserModule,

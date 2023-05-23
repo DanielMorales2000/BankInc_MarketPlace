@@ -1,0 +1,21 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>BankInk<strong> Marketplace</strong></span>
+    <span class="example-spacer"></span>
+    <button mat-button (click)="openDialog()">
+      <mat-icon
+        matBadge="15"
+        matBadgeColor="warn"
+        class="example-icon"
+        (click)="openDialog()"
+        >local_grocery_store</mat-icon
+      >
+    </button>
+    <button mat-button (click)="onCloseSession()">
+      <mat-icon class="example-icon" (click)="onCloseSession()"
+        >meeting_room</mat-icon
+      >
+      Close session
+    </button>
+  </mat-toolbar-row>
+</mat-toolbar>
