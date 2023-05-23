@@ -27,6 +27,7 @@
       [mode]="mobileQuery.matches ? 'over' : 'side'"
       [fixedInViewport]="mobileQuery.matches"
       fixedTopGap="56"
+      class="sidenav"
     >
       <mat-nav-list>
         <a mat-list-item routerLink="." *ngFor="let nav of fillerNav">{{

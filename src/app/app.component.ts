@@ -28,8 +28,6 @@ export class AppComponent {
     this.authService.isAuthenticatedListener.subscribe((data) => {
       this.isAuth = data;
     });
-
-    this.authService.verifyLoginState();
   }
 
   get isLoginCurrent() {

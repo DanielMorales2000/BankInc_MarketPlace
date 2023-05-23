@@ -3,7 +3,6 @@
   <head> </head>
   <body>
     <app-loading *ngIf="isLoading"></app-loading>
-    <app-sidenav *ngIf="!isLoginCurrent"></app-sidenav>
-    <router-outlet *ngIf="isLoginCurrent"></router-outlet>
+    <router-outlet></router-outlet>
   </body>
 </html>

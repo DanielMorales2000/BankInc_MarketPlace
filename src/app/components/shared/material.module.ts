@@ -8,6 +8,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatBadgeModule } from '@angular/material/badge';
+import { ProductCardComponent } from './product-card/product-card.component';
 
 const materialModules = [
   MatIconModule,
@@ -18,11 +21,14 @@ const materialModules = [
   MatToolbarModule,
   MatButtonModule,
   MatCardModule,
-  MatInputModule
+  MatInputModule,
+  MatMenuModule,
+  MatBadgeModule
 ]
 
 @NgModule({
   declarations: [
+    ProductCardComponent
   ],
   imports: [],
   exports: [...materialModules]

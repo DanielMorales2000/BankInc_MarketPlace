@@ -24,6 +24,14 @@ h1.example-app-name {
   flex: 1;
 }
 
+.sidenav {
+  background-color: beige;
+}
+
+.example-toolbar {
+  background-color: blueviolet;
+}
+
 .example-is-mobile .example-sidenav-container {
   /* When the sidenav is fixed, don't constrain the height of the sidenav container. This allows the
        `<body>` to be our scrolling element for mobile layouts. */
@@ -37,6 +45,5 @@ h1.example-app-name {
 }
 
 .sidenav-content {
-  background-image: url("../../../../assets/images/pexels-photo-1939485.jpeg");
-  background-repeat: repeat-x;
+  background-color: white;
 }
