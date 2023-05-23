@@ -1,0 +1,58 @@
+<div class="container">
+  <mat-card>
+    <mat-card-title><h1>Iniciar Sesión</h1></mat-card-title>
+    <mat-card-content>
+      <form class="example-form" [formGroup]="loginFormGroup">
+        <div>
+          <mat-form-field
+            class="example-full-width"
+            appearance="fill"
+            color="accent"
+          >
+            <mat-label>Email</mat-label>
+            <input type="email" matInput formControlName="email" />
+            <mat-error
+              *ngIf="
+                loginFormGroup.controls['email'].invalid &&
+                loginFormGroup.controls['email'].touched
+              "
+            >
+              Digite un email válido
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div>
+          <mat-form-field
+            class="example-full-width"
+            appearance="fill"
+            color="accent"
+          >
+            <mat-label>Contraseña</mat-label>
+            <input type="password" matInput formControlName="password" />
+            <mat-error
+              *ngIf="
+                loginFormGroup.controls['password'].invalid &&
+                loginFormGroup.controls['password'].touched
+              "
+            >
+              La contraseña debe tener entre 5 y 16 caracteres
+            </mat-error>
+          </mat-form-field>
+        </div>
+      </form>
+    </mat-card-content>
+    <mat-card-actions>
+      <button
+        mat-raised-button
+        color="primary"
+        [disabled]="loginFormGroup.invalid"
+        (click)="login()"
+      >
+        Ingresar
+      </button>
+      <div class="raised-button">
+        <button mat-raised-button>Cancelar</button>
+      </div>
+    </mat-card-actions>
+  </mat-card>
+</div>

@@ -1,0 +1,36 @@
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mdc-card {
+  padding: 3vw;
+  min-width: 30vw;
+  min-height: 60vh;
+  background-color: initial;
+  backdrop-filter: blur(10px);
+}
+
+.mdc-card__actions {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 3vh;
+  right: 0;
+  margin-right: 3vw;
+}
+
+.raised-button {
+  margin-left: 10px;
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
